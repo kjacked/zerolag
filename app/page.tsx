@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import Hyperspeed from "@/components/Hyperspeed";
 import DecryptedText from "@/components/DecryptedText";
-import GradientBlinds from "@/components/GradientBlinds";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
@@ -67,10 +66,8 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="relative py-28 px-4 md:px-8 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
-        <GradientBlinds blindCount={12} colors={["#00f0ff", "#03b3c3", "#00d4e6"]} opacity={0.12} />
-
-        <div className="max-w-6xl mx-auto relative z-10 fade-on-scroll opacity-0">
+      <section className="relative py-28 px-4 md:px-8 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div className="max-w-6xl mx-auto fade-on-scroll opacity-0">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-16 text-center tracking-tight leading-tight">
             <DecryptedText
               text="About ZeroLag"
@@ -127,8 +124,8 @@ export default function Home() {
                 <Image
                   src="/flow-diagram.svg"
                   alt="ZeroLag Flow Diagram"
-                  width={1200}
-                  height={600}
+                  width={1400}
+                  height={400}
                   className="w-full h-auto rounded-lg"
                   style={{ objectFit: "contain" }}
                 />

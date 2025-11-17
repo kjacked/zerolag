@@ -1,193 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 400" fill="none">
   <!-- Background -->
-  <rect width="1200" height="600" fill="#000000"/>
+  <rect width="1400" height="400" fill="#000000"/>
 
-  <!-- Title -->
-  <text x="600" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00f0ff" text-anchor="middle">
-    ZeroLag Capital Flow
-  </text>
-
-  <!-- 1. Telegram Bot -->
-  <g transform="translate(50, 100)">
-    <rect x="0" y="0" width="130" height="100" rx="10" fill="url(#grad1)" stroke="#00f0ff" stroke-width="2"/>
-    <text x="65" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">📱 Telegram</text>
-    <text x="65" y="55" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Bot</text>
-    <text x="65" y="80" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">User Deposit</text>
-  </g>
-
-  <!-- Arrow 1 to 2 -->
+  <!-- Gradient Definitions -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#00f0ff"/>
-    </marker>
-  </defs>
-  <line x1="180" y1="150" x2="240" y2="150" stroke="#00f0ff" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="210" y="140" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Capital</text>
-
-  <!-- 2. User Wallet -->
-  <g transform="translate(240, 100)">
-    <rect x="0" y="0" width="130" height="100" rx="10" fill="url(#grad2)" stroke="#03b3c3" stroke-width="2"/>
-    <text x="65" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">💰 User</text>
-    <text x="65" y="55" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Wallet</text>
-    <text x="65" y="80" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">USDC/ETH/MONAD</text>
-  </g>
-
-  <!-- Arrow 2 to 3 -->
-  <line x1="370" y1="150" x2="430" y2="150" stroke="#00f0ff" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="400" y="140" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Funds</text>
-
-  <!-- 3. Vault Engine -->
-  <g transform="translate(430, 80)">
-    <rect x="0" y="0" width="160" height="140" rx="15" fill="url(#grad3)" stroke="#00f0ff" stroke-width="3"/>
-    <text x="80" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">⚡ Vault</text>
-    <text x="80" y="50" font-family="Arial, sans-serif" font-size="14" fill="#e0e0e0" text-anchor="middle">Engine</text>
-    <text x="80" y="75" font-family="Arial, sans-serif" font-size="11" fill="#00f0ff" text-anchor="middle">Smart Contract</text>
-    <text x="80" y="95" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Live PnL</text>
-    <text x="80" y="110" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Auto-Distribution</text>
-    <text x="80" y="130" font-family="Arial, sans-serif" font-size="10" fill="#00d4e6" text-anchor="middle">Risk Management</text>
-  </g>
-
-  <!-- Arrow 3 to 4 (Arbitrage) -->
-  <line x1="590" y1="130" x2="650" y2="80" stroke="#00f0ff" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="620" y="100" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Route</text>
-
-  <!-- Arrow 3 to 5 (Staking) -->
-  <line x1="590" y1="170" x2="650" y2="220" stroke="#03b3c3" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="620" y="200" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Idle $</text>
-
-  <!-- 4. Arbitrage Execution -->
-  <g transform="translate(650, 30)">
-    <rect x="0" y="0" width="150" height="100" rx="10" fill="url(#grad4)" stroke="#00f0ff" stroke-width="2"/>
-    <text x="75" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">🔄 Arbitrage</text>
-    <text x="75" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Engine</text>
-    <text x="75" y="65" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">DEX A ⟷ DEX B</text>
-    <text x="75" y="85" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Block-level Speed</text>
-  </g>
-
-  <!-- 5. shMONAD Staking -->
-  <g transform="translate(650, 170)">
-    <rect x="0" y="0" width="150" height="100" rx="10" fill="url(#grad5)" stroke="#03b3c3" stroke-width="2"/>
-    <text x="75" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">🥩 Flash</text>
-    <text x="75" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Staking</text>
-    <text x="75" y="65" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">shMONAD Pool</text>
-    <text x="75" y="85" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Passive Yield</text>
-  </g>
-
-  <!-- Arrow 4 to 6 (MEV Bundle) -->
-  <line x1="800" y1="80" x2="860" y2="80" stroke="#00f0ff" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="830" y="70" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Execute</text>
-
-  <!-- 6. MEV Bundle -->
-  <g transform="translate(860, 30)">
-    <rect x="0" y="0" width="150" height="100" rx="10" fill="url(#grad6)" stroke="#00d4e6" stroke-width="2"/>
-    <text x="75" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">⚙️ MEV</text>
-    <text x="75" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Bundle</text>
-    <text x="75" y="65" font-family="Arial, sans-serif" font-size="10" fill="#00d4e6" text-anchor="middle">Backrun</text>
-    <text x="75" y="85" font-family="Arial, sans-serif" font-size="10" fill="#00d4e6" text-anchor="middle">Sandwich</text>
-  </g>
-
-  <!-- Arrow 6 to 7 (Profits) -->
-  <line x1="935" y1="130" x2="935" y2="190" stroke="#32cd32" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="950" y="160" font-family="Arial, sans-serif" font-size="10" fill="#32cd32" text-anchor="start">Profit</text>
-
-  <!-- Arrow 5 to 7 (Staking Yield) -->
-  <line x1="800" y1="220" x2="860" y2="220" stroke="#03b3c3" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <text x="830" y="210" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Yield</text>
-
-  <!-- 7. Auto-Compound -->
-  <g transform="translate(860, 190)">
-    <rect x="0" y="0" width="150" height="80" rx="10" fill="url(#grad7)" stroke="#32cd32" stroke-width="2"/>
-    <text x="75" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">📈 Auto-</text>
-    <text x="75" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Compound</text>
-    <text x="75" y="65" font-family="Arial, sans-serif" font-size="10" fill="#32cd32" text-anchor="middle">Reinvest Profits</text>
-  </g>
-
-  <!-- Arrow 7 back to 3 (Reinvest) -->
-  <path d="M 860 230 Q 700 300 510 220" stroke="#32cd32" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
-  <text x="700" y="300" font-family="Arial, sans-serif" font-size="10" fill="#32cd32" text-anchor="middle">Reinvest</text>
-
-  <!-- 8. User Withdrawal -->
-  <g transform="translate(50, 350)">
-    <rect x="0" y="0" width="130" height="100" rx="10" fill="url(#grad8)" stroke="#00f0ff" stroke-width="2"/>
-    <text x="65" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">💸 Instant</text>
-    <text x="65" y="50" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Withdrawal</text>
-    <text x="65" y="70" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Anytime</text>
-    <text x="65" y="88" font-family="Arial, sans-serif" font-size="10" fill="#32cd32" text-anchor="middle">Principal + Yield</text>
-  </g>
-
-  <!-- Arrow Vault to Withdrawal -->
-  <path d="M 430 180 Q 300 280 180 350" stroke="#00f0ff" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-  <text x="300" y="280" font-family="Arial, sans-serif" font-size="10" fill="#00f0ff" text-anchor="middle">Withdraw</text>
-
-  <!-- 9. Real-Time Analytics -->
-  <g transform="translate(240, 350)">
-    <rect x="0" y="0" width="140" height="100" rx="10" fill="url(#grad9)" stroke="#03b3c3" stroke-width="2"/>
-    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">📊 Analytics</text>
-    <text x="70" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Dashboard</text>
-    <text x="70" y="65" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Live PnL</text>
-    <text x="70" y="80" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Position Size</text>
-    <text x="70" y="95" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">ROI Tracking</text>
-  </g>
-
-  <!-- Arrow Vault to Analytics -->
-  <path d="M 510 220 Q 420 280 310 350" stroke="#03b3c3" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
-  <text x="420" y="290" font-family="Arial, sans-serif" font-size="10" fill="#03b3c3" text-anchor="middle">Data</text>
-
-  <!-- Legend -->
-  <g transform="translate(450, 350)">
-    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Key Benefits:</text>
-    <text x="0" y="45" font-family="Arial, sans-serif" font-size="11" fill="#00f0ff">• Non-Custodial Security</text>
-    <text x="0" y="65" font-family="Arial, sans-serif" font-size="11" fill="#00f0ff">• Telegram-Native UX</text>
-    <text x="0" y="85" font-family="Arial, sans-serif" font-size="11" fill="#00f0ff">• Auto-Compounding Yield</text>
-
-    <text x="250" y="45" font-family="Arial, sans-serif" font-size="11" fill="#03b3c3">• 10k+ TPS on Monad</text>
-    <text x="250" y="65" font-family="Arial, sans-serif" font-size="11" fill="#03b3c3">• Sub-Second Finality</text>
-    <text x="250" y="85" font-family="Arial, sans-serif" font-size="11" fill="#03b3c3">• MEV + Staking Yield</text>
-  </g>
-
-  <!-- Gradients -->
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000a1e;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e2a3a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f1a2a;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#001a33;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#002244;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#001a33;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f1020;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2a3a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f1a2a;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2030;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f1520;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a3020;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f2010;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2a3a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f1a2a;stop-opacity:1" />
-    </linearGradient>
-  </defs>
 
-  <!-- Glow effects -->
-  <defs>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#00f0ff;stop-opacity:1" />
+    </linearGradient>
+
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
@@ -195,5 +21,94 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00f0ff"/>
+    </marker>
   </defs>
+
+  <!-- Step 1: Deposit -->
+  <g transform="translate(40, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#00f0ff" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#00f0ff" text-anchor="middle" font-weight="bold">01</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Deposit</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Telegram</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Bot Entry</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="200" y1="200" x2="260" y2="200" stroke="url(#arrowGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Vault -->
+  <g transform="translate(260, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#00f0ff" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#00f0ff" text-anchor="middle" font-weight="bold">02</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Vault</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Smart</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Contract</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="420" y1="200" x2="480" y2="200" stroke="url(#arrowGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: MEV -->
+  <g transform="translate(480, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#00f0ff" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#00f0ff" text-anchor="middle" font-weight="bold">03</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">MEV</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Arbitrage</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Engine</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="640" y1="200" x2="700" y2="200" stroke="url(#arrowGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: Staking -->
+  <g transform="translate(700, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#03b3c3" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#03b3c3" text-anchor="middle" font-weight="bold">04</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Staking</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">shMONAD</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Yield</text>
+  </g>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="860" y1="200" x2="920" y2="200" stroke="url(#arrowGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5: Compound -->
+  <g transform="translate(920, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#32cd32" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#32cd32" text-anchor="middle" font-weight="bold">05</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Compound</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Auto-</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Reinvest</text>
+  </g>
+
+  <!-- Arrow 5 to 6 -->
+  <line x1="1080" y1="200" x2="1140" y2="200" stroke="url(#arrowGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 6: Withdraw -->
+  <g transform="translate(1140, 140)">
+    <rect width="160" height="120" rx="12" fill="url(#boxGrad)" stroke="#00f0ff" stroke-width="2"/>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" fill="#00f0ff" text-anchor="middle" font-weight="bold">06</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Withdraw</text>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Instant</text>
+    <text x="80" y="112" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">Anytime</text>
+  </g>
+
+  <!-- Top Labels -->
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="600">ENTRY</text>
+  <text x="340" y="80" font-family="Arial, sans-serif" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="600">ROUTING</text>
+  <text x="560" y="80" font-family="Arial, sans-serif" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="600">EXECUTION</text>
+  <text x="780" y="80" font-family="Arial, sans-serif" font-size="14" fill="#03b3c3" text-anchor="middle" font-weight="600">PASSIVE YIELD</text>
+  <text x="1000" y="80" font-family="Arial, sans-serif" font-size="14" fill="#32cd32" text-anchor="middle" font-weight="600">GROWTH</text>
+  <text x="1220" y="80" font-family="Arial, sans-serif" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="600">EXIT</text>
+
+  <!-- Bottom Description -->
+  <text x="700" y="340" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Capital Flow Lifecycle</text>
+  <text x="700" y="365" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">From Telegram deposit to withdrawal with auto-compounding MEV + Staking yield</text>
+
+  <!-- Curved arrow from Compound back to Vault -->
+  <path d="M 1000 270 Q 640 320 340 270" stroke="#32cd32" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5" opacity="0.6"/>
+  <text x="640" y="330" font-family="Arial, sans-serif" font-size="11" fill="#32cd32" text-anchor="middle" opacity="0.8">Reinvest Loop</text>
 </svg>
