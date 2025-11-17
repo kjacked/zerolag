@@ -105,8 +105,8 @@
   <text x="1220" y="80" font-family="Arial, sans-serif" font-size="14" fill="#00f0ff" text-anchor="middle" font-weight="600">EXIT</text>
 
   <!-- Bottom Description -->
-  <text x="700" y="340" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Capital Flow Lifecycle</text>
-  <text x="700" y="365" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">From Telegram deposit to withdrawal with auto-compounding MEV + Staking yield</text>
+  <text x="700" y="360" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Capital Flow Lifecycle</text>
+  <text x="700" y="385" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">From Telegram deposit to withdrawal with auto-compounding MEV + Staking yield</text>
 
   <!-- Curved arrow from Compound back to Vault -->
   <path d="M 1000 270 Q 640 320 340 270" stroke="#32cd32" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5" opacity="0.6"/>
