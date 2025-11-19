@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   authors: [{ name: "ZeroLag Team" }],
   openGraph: {
     title: "ZeroLag - Zero Lag. Max Bags.",
-    description: "Earn MEV and staking yield on Monad. The Telegram-native, non-custodial MEV and Flash-Staking Arbitrage Vault.",
+    description: "The Telegram-native, non-custodial MEV and Flash-Staking Arbitrage Vault.",
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "ZeroLag Logo",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ZeroLag - Zero Lag. Max Bags.",
-    description: "Earn MEV and staking yield on Monad. The Telegram-native, non-custodial MEV and Flash-Staking Arbitrage Vault.",
-    images: ["/logo.png"],
+    description: "The Telegram-native, non-custodial MEV and Flash-Staking Arbitrage Vault.",
+    images: ["/preview.png"],
   },
 };
 
