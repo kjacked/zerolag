@@ -40,14 +40,14 @@ export default function Home() {
         </div>
 
         {/* Enter button - ONLY clickable element */}
-        <Button
+            <Button
           onClick={handleEnter}
-          size="lg"
-          className="pointer-events-auto bg-transparent border-2 border-[#00ff9d] text-[#00ff9d] font-bold text-lg md:text-xl px-12 py-6 rounded-none hover:bg-[#00ff9d] hover:text-black transition-all duration-200 shadow-[0_0_20px_#00ff9d] hover:shadow-[0_0_40px_#00ff9d,0_0_60px_#00ffff]"
+              size="lg"
+          className="pointer-events-auto bg-[#00ff9d] border-2 border-[#00ff9d] text-black font-bold text-lg md:text-xl px-12 py-6 rounded-none hover:bg-[#00ff41] hover:border-[#00ff41] transition-all duration-200 shadow-[0_0_20px_#00ff9d] hover:shadow-[0_0_40px_#00ff9d,0_0_60px_#00ffff]"
         >
           ENTER THE VOID
-        </Button>
-      </div>
+            </Button>
+          </div>
     </div>
   );
 }
