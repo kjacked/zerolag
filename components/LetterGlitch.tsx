@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 interface LetterGlitchProps {
   glitchColors?: string[];
@@ -221,7 +221,7 @@ const LetterGlitch = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [glitchSpeed, smooth]);
 
-  const containerStyle = {
+  const containerStyle: React.CSSProperties = {
     position: 'relative',
     width: '100%',
     height: '100%',
@@ -229,13 +229,13 @@ const LetterGlitch = ({
     overflow: 'hidden'
   };
 
-  const canvasStyle = {
+  const canvasStyle: React.CSSProperties = {
     display: 'block',
     width: '100%',
     height: '100%'
   };
 
-  const outerVignetteStyle = {
+  const outerVignetteStyle: React.CSSProperties = {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -245,7 +245,7 @@ const LetterGlitch = ({
     background: 'radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%)'
   };
 
-  const centerVignetteStyle = {
+  const centerVignetteStyle: React.CSSProperties = {
     position: 'absolute',
     top: 0,
     left: 0,
