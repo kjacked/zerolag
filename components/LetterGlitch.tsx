@@ -80,7 +80,7 @@ const LetterGlitch = ({
     return { columns, rows };
   };
 
-  const initializeLetters = (columns, rows) => {
+  const initializeLetters = (columns: number, rows: number) => {
     grid.current = { columns, rows };
     const totalLetters = columns * rows;
     letters.current = Array.from({ length: totalLetters }, () => ({
